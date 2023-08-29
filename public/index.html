@@ -28,6 +28,23 @@
         Simple Tailwind Template
       </a>
 
+      <!-- Extendable search bar with icon -->
+
+      <div class="relative bg-white p-1 shadow-xl rounded-sm">
+        <form action="" class="relative w-max mx-auto bg-white text-blue-800">
+          <input type="search" name="search" id="search"
+            class="relative peer z-10 bg-transparent w-10 h-10 rounded-full border cursor-pointer outline-none pl-12 focus:w-full focus:border-lime-300 focus:cursor-text focus:pl-16 focus:pr-4 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="absolute inset-y-0 my-auto w-12 h-8 px-3.5 stroke-gray-500 border-r border-transparent peer-focus:border-lime-300 peer-focus:stroke-lime-500">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+            </svg>
+
+        </form>
+      </div>
+
+      <!-- End of extendable search bar with icon -->
+
 
       <!-- Hamburger -->
       <button class="sm:hidden cursor-pointer flex flex-col justify-center gap-y-1" id="hamburger" aria-label="menu">
