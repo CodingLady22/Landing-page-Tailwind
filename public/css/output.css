@@ -528,12 +528,34 @@ body::before{
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
 .top-0 {
   top: 0px;
 }
 
 .z-20 {
   z-index: 20;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mx-2 {
@@ -544,6 +566,11 @@ body::before{
 .mx-10 {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .mt-5 {
@@ -582,16 +609,53 @@ body::before{
   display: none;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-1 {
   height: 0.25rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.h-7 {
+  height: 1.75rem;
+}
+
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-6 {
+  height: 1.5rem;
 }
 
 .w-full {
   width: 100%;
 }
 
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-12 {
+  width: 3rem;
+}
+
 .w-6 {
   width: 1.5rem;
+}
+
+.w-10 {
+  width: 2.5rem;
 }
 
 .cursor-pointer {
@@ -660,8 +724,28 @@ body::before{
   row-gap: 0.5rem;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
+.rounded-sm {
+  border-radius: 0.125rem;
 }
 
 .rounded-tl {
@@ -680,6 +764,18 @@ body::before{
   border-top-right-radius: 0.25rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-r {
+  border-right-width: 1px;
+}
+
+.border-transparent {
+  border-color: transparent;
+}
+
 .bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
@@ -690,6 +786,11 @@ body::before{
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
@@ -698,6 +799,10 @@ body::before{
 .bg-primary-color {
   --tw-bg-opacity: 1;
   background-color: rgb(0 255 170 / var(--tw-bg-opacity));
+}
+
+.bg-transparent {
+  background-color: transparent;
 }
 
 .bg-gradient-to-r {
@@ -712,6 +817,22 @@ body::before{
 
 .to-green-900 {
   --tw-gradient-to: #14532d;
+}
+
+.stroke-gray-500 {
+  stroke: #6b7280;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .px-4 {
@@ -744,6 +865,11 @@ body::before{
   padding-right: 0.5rem;
 }
 
+.px-3\.5 {
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+}
+
 .pb-7 {
   padding-bottom: 1.75rem;
 }
@@ -758,6 +884,10 @@ body::before{
 
 .pt-1 {
   padding-top: 0.25rem;
+}
+
+.pl-12 {
+  padding-left: 3rem;
 }
 
 .text-left {
@@ -825,8 +955,28 @@ body::before{
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
+.text-blue-800 {
+  --tw-text-opacity: 1;
+  color: rgb(30 64 175 / var(--tw-text-opacity));
+}
+
 .caret-primary-color {
   caret-color: #0fa;
+}
+
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.outline-none {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.outline {
+  outline-style: solid;
 }
 
 .outline-0 {
@@ -849,6 +999,36 @@ body::before{
 
 .hover\:opacity-50:hover {
   opacity: 0.5;
+}
+
+.focus\:w-full:focus {
+  width: 100%;
+}
+
+.focus\:cursor-text:focus {
+  cursor: text;
+}
+
+.focus\:border-lime-300:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(190 242 100 / var(--tw-border-opacity));
+}
+
+.focus\:pl-16:focus {
+  padding-left: 4rem;
+}
+
+.focus\:pr-4:focus {
+  padding-right: 1rem;
+}
+
+.peer:focus ~ .peer-focus\:border-lime-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(190 242 100 / var(--tw-border-opacity));
+}
+
+.peer:focus ~ .peer-focus\:stroke-lime-500 {
+  stroke: #84cc16;
 }
 
 @media (min-width: 640px) {
